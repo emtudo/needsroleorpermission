@@ -1,0 +1,21 @@
+{
+    "name": "resultsystems/needsroleorpermission",
+    "description": "Merge needsPermission and needsRoles artesaos/defender",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Leandro Henrique Reis",
+            "email": "resultsystems@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "artesaos/defender": "~0.3|dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "ResultSystems\\NeedsRoleOrPermission\\": "src/NeedsRoleOrPermission/"
+        }
+    },
+    "minimum-stability": "dev"
+}
