@@ -34,7 +34,7 @@ protected $routeMiddleware = [
     'guest'           => 'App\Http\Middleware\RedirectIfAuthenticated',
 
     // Controle de acesso usando permissões e grupos
-    'needsRoleOrPermission' => 'ResultSystems\NeedsRoleOrPermission\Http\Middleware\needsRoleOrPermission',
+    'needsRoleOrPermission' => 'ResultSystems\NeedsRoleOrPermission\Http\Middleware\NeedsRoleOrPermission',
 ];
 Route::get('foo', ['middleware' => ['auth', 'needsRoleOrPermission'], 'can' => ['user.index', 'user.create'], 'is' => 'admin', function()
 {

@@ -5,7 +5,7 @@ namespace ResultSystems\NeedsRoleOrPermission\Http\Middleware;
 use Artesaos\Defender\Middlewares\AbstractDefenderMiddleware;
 use Closure;
 
-class needsRoleOrPermission extends AbstractDefenderMiddleware
+class NeedsRoleOrPermission extends AbstractDefenderMiddleware
 {
     /**
      * @param \Illuminate\Http\Request $request
