@@ -1,12 +1,12 @@
-#Junção dos middleware needsPermission e needsRoles do pacote artesaos/defender
+#Merge needsPermission and needsRoles artesaos/defender
 
-[Readme on English](https://github.com/resultsystems/needsroleorpermission/blob/master/README.md).
+[Readme em Português](https://github.com/resultsystems/needsroleorpermission/blob/master/readme-pt_BR.md).
 
 [artesaos/defender](https://github.com/artesaos/defender).
 
-## Instalação
+## Installation
 
-### 1. Dependência
+### 1. Dependency
 
 Using <a href="https://getcomposer.org/" target="_blank">composer</a>, execute the following command to automatically update your `composer.json`:
 
@@ -14,7 +14,7 @@ Using <a href="https://getcomposer.org/" target="_blank">composer</a>, execute t
 composer require resultsystems/needsroleorpermission
 ```
 
-ou manualmente pelo no seu arquivo `composer.json`
+or manually update your `composer.json` file
 
 ```json
 {
@@ -25,7 +25,7 @@ ou manualmente pelo no seu arquivo `composer.json`
 ```
 
 ### 2. Middlewares
-Para utilizá-los é necessário registrá-los no seu arquivo app/Http/Kernel.php.
+To use them, just put it in your `app/Http/Kernel.php` file.
 
 ```php
 protected $routeMiddleware = [
@@ -38,6 +38,6 @@ protected $routeMiddleware = [
 ];
 Route::get('foo', ['middleware' => ['auth', 'needsRoleOrPermission'], 'can' => ['user.index', 'user.create'], 'is' => 'admin', function()
 {
-    return 'Sim eu posso!';
+    return 'Yes I can!';
 }]);
 ```
