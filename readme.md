@@ -1,4 +1,6 @@
-#Merge needsPermission and needsRoles artesaos/defender
+# Pacote abandonado!
+
+# Merge needsPermission and needsRoles artesaos/defender
 
 [Readme em Português](https://github.com/resultsystems/needsroleorpermission/blob/master/readme-pt_BR.md).
 
